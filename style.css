@@ -8,18 +8,10 @@ body {
     position: relative;
   }
   
-  /* Logo Styles */
-  .logo {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    max-width: 150px;
-    width: auto;
-  }
   
   /* Container with the background image */
   .container {
-    background: url('https://i.postimg.cc/TY28jTqJ/bg4-ia.jpg') no-repeat center center/cover;
+    background: url('images/cambio.jpg') no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -40,7 +32,7 @@ body {
   
   /* Button Styles */
   button {
-    background-color: #ff1b7b;
+    background-color: #00acfc;
     border: none;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -49,8 +41,21 @@ body {
     transition: background-color 0.3s ease;
   }
   
+  .converter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
   button:hover {
-    background-color: #1ABC9C;
+    background-color: #73d9f8;
   }
   
   /* Footer Styles */
