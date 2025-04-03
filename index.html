@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,18 +9,36 @@
   <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
   <script src='script.js'></script>
 </head>
+
 <body>
-    
+
   <div class="container">
     <div class="content">
-      <h2>How about knowing how much your money is worth in Wons?</h2>
+      <h2>How about knowing how much your money is worth in other countries?</h2>
       <div class="converter">
-        <label for="amount">Value:</label>
-        <input type="number" id="amount" placeholder="Enter the value in Wons" >
-    
-        <label for="converted">Converted value in R$:</label>
+
+        <label for="fromCurrency"> Value in:</label>
+        <select id="fromCurrency">
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD">Dólar (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="WON">Won South-Korean (KRW)</option>
+        </select>
+
+        <label for="amount"></label>
+        <input type="number" id="amount" placeholder="Enter the value to be converted">
+
+        <label for="toCurrency">Converted Value:</label>
+        <select id="toCurrency">
+          <option value="USD">Dólar (USD)</option>
+          <option value="BRL">Real (BRL)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="KRW">Won Sul-Coreano (KRW)</option>
+        </select>
+
+        <label for="converted"></label>
         <input type="text" id="converted" readonly>
-    </div>
+      </div>
       <button onclick="converter()">Convert!</button>
     </div>
   </div>
@@ -29,5 +48,5 @@
 </body>
 
 </html>
+
 <body>
-    
